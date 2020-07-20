@@ -9,7 +9,27 @@ Username
 
 </form>
 
-{% for u in user %}
- {{ u.username }}
- {{ u.kredi }}
-{% endfor %}
+<style>
+ table, th, td {
+  border: 1px solid black;
+ }
+</style>
+<table>
+ Userler
+ <tr>
+  <th>username</th>
+
+
+
+ </tr>
+ {% for u in user %}
+  <tr>
+
+   <td>{{ u.username }}</td>
+
+
+
+
+  </tr>
+ {% endfor %}
+</table>

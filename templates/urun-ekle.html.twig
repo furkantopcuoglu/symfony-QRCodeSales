@@ -9,6 +9,26 @@
 
 </form>
 
-{% for p in product %}
- {{ p.name }}
-{% endfor %}
+<style>
+ table, th, td {
+  border: 1px solid black;
+ }
+</style>
+<table>
+Product
+ <tr>
+  <th>Product Name</th>
+
+
+ </tr>
+ {% for p in product %}
+  <tr>
+
+   <td>{{ p.name }}</td>
+
+
+
+
+  </tr>
+ {% endfor %}
+</table>

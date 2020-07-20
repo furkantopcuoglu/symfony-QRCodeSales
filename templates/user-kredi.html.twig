@@ -16,7 +16,27 @@ User
 
 </form>
 
-{% for u in user %}
- {{ u.username }}
- {{ u.kredi }}
-{% endfor %}
+<style>
+ table, th, td {
+  border: 1px solid black;
+ }
+</style>
+<table>
+ User Kredi Ekleme
+ <tr>
+  <th>username</th>
+  <th>KrediMiktari</th>
+
+
+ </tr>
+ {% for u in user %}
+  <tr>
+
+   <td>{{ u.username }}</td>
+   <td>{{ u.kredi }}</td>
+
+
+
+  </tr>
+ {% endfor %}
+</table>
