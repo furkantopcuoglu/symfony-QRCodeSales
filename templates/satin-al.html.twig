@@ -1,0 +1,26 @@
+<form  action="{{ path('satinal') }}" method="post" >
+
+
+
+Kullanıcı Seç
+ <select name="user_id">
+
+   {% for u in user %}
+    <option value="{{ u.id }}" >{{ u.username }}</option>
+   {% endfor %}
+
+ </select>
+
+ Ürün Seç
+ <select name="product_id">
+
+  {% for p in product %}
+   <option value="{{ p.id }}" >{{ p.name }}</option>
+  {% endfor %}
+
+ </select>
+ Kaç Kredilik Satın Alınacak ?
+ <input type="number"  name="kredi"><br><br>
+ <button type="submit" class="btn btn-primary">Satın Al</button>
+
+</form>

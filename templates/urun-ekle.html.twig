@@ -1,0 +1,14 @@
+<form  action="{{ path('urun_ekle') }}" method="post" >
+
+
+
+Ürün Adı
+ <input type="text"  name="name"><br><br>
+
+ <button type="submit" class="btn btn-primary">Ürün Ekle</button>
+
+</form>
+
+{% for p in product %}
+ {{ p.name }}
+{% endfor %}

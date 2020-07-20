@@ -1,0 +1,22 @@
+<form  action="{{ path('uye_kredi') }}" method="post" >
+
+
+
+User
+ <select name="id">
+
+   {% for u in user %}
+    <option value="{{ u.id }}" >{{ u.username }}</option>
+   {% endfor %}
+
+ </select>
+ Eklenicek Kredi Miktarı
+ <input type="text"  name="kredi_miktari"><br><br>
+ <button type="submit" class="btn btn-primary">Kredi Ekle</button>
+
+</form>
+
+{% for u in user %}
+ {{ u.username }}
+ {{ u.kredi }}
+{% endfor %}

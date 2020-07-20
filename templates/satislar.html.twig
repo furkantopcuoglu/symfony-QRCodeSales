@@ -1,0 +1,29 @@
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<table>
+    Satışlar
+    <tr>
+        <th>id</th>
+        <th>user</th>
+        <th>product</th>
+        <th>sales price</th>
+        <th>QR Code</th>
+
+    </tr>
+    {% for s in sales %}
+        <tr>
+
+            <td>{{ s.id }}</td>
+            <td>{{ s.user }}</td>
+            <td>{{ s.product }}</td>
+            <td>{{ s.salesprice }}</td>
+            <td><img src="{{ s.qrcode }}" width="150px"/></td>
+
+
+
+        </tr>
+    {% endfor %}
+</table>

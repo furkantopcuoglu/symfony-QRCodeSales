@@ -1,0 +1,15 @@
+<form  action="{{ path('uye_ekle') }}" method="post" >
+
+
+
+Username
+ <input type="text"  name="username"><br><br>
+
+ <button type="submit" class="btn btn-primary">Uye Ekle</button>
+
+</form>
+
+{% for u in user %}
+ {{ u.username }}
+ {{ u.kredi }}
+{% endfor %}
